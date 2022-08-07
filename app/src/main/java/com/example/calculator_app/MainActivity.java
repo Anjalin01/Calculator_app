@@ -6,15 +6,18 @@ import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     //we need to grab the values which we put in edit text
     private EditText display;
+    private TextView previousCalculation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        previousCalculation = findViewById(R.id.textview2);
         display=findViewById(R.id.input);
         //to stop the default keyboard from popping up
         display.setShowSoftInputOnFocus(false);
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     // view is a small rectangular box that responds to user inputs. Eg: EditText, Button, CheckBox, etc.
     public void zeroBtn(View view){
         updateText("0");
+        // updateText(getResources().getString(R.string.zero))
     }
     public void oneBtn(View view){
         updateText("1");
@@ -89,10 +93,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void divBtn(View view){
         updateText("÷");
-
     }
     public void clearBtn(View view){
        display.setText("");
+       previousCalculation.setText("");
     }
     public void expBtn(View view){
         updateText("^");
@@ -117,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void equalsBtn(View view){
         String userExp=display.getText().toString();
+        previousCalculation.setText(userExp);
         userExp=userExp.replaceAll("÷","/");
         userExp=userExp.replaceAll("×","*");
         Expression exp=new Expression(userExp);

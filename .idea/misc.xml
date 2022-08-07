@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/drawable-anydpi/ic_backspace_icon.xml" value="0.18" />
+        <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/drawable/app_background.xml" value="0.1235" />
         <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/drawable/bckspace.xml" value="0.124" />
         <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/drawable/circle.xml" value="0.124" />
         <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/drawable/circle2.xml" value="0.1235" />
-        <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Flex/AndroidStudioProjects/Calculator_app/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
